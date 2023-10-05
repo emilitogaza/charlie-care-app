@@ -6,11 +6,19 @@
   padding: 2rem;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 .btn-container {
   display: flex;
+  flex-direction: column;
   margin-top: 2rem;
   width: 100%;
-  padding: 4rem;
+  // padding: 4rem;
   align-items: flex-start;
   gap: 4rem;
 }
@@ -19,12 +27,5 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
+  gap: 1rem;
 }
