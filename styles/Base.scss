@@ -1,0 +1,94 @@
+// Base styles
+body {
+  font-family: "Geologica", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.12;
+  font-variant-numeric: lining-nums tabular-nums stacked-fractions ordinal;
+  font-feature-settings: "rvrn" on;
+  font-style: normal;
+  font-variation-settings: "SHRP" 0;
+  letter-spacing: -0.72px;
+  color: $dark-text;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 440;
+  margin-bottom: 0.24rem;
+  margin-top: 0.24rem;
+  font-variation-settings: "SHRP" 24;
+}
+
+h1 {
+  @include responsive-font(3.2rem, 4.8rem, 5.6rem);
+}
+
+h2 {
+  @include responsive-font(2.8rem, 3.2rem, 4rem);
+}
+
+h3 {
+  @include responsive-font(2.4rem, 2.6rem, 2.8rem);
+}
+
+h4 {
+  @include responsive-font(1.7rem, 1.85rem, 2rem);
+}
+
+h5 {
+  @include responsive-font(1.2rem, 1.3rem, 1.4rem);
+}
+
+h6 {
+  @include responsive-font(1rem, 1rem, 1.1rem);
+}
+
+// Body bold
+.body-bold {
+  font-weight: 440;
+  margin-bottom: 0.24rem;
+}
+
+// Caption
+.caption {
+  font-size: 0.72rem;
+  font-weight: 320;
+}
+
+.light-text {
+  $light-text: $Desaturated-35;
+}
+
+// Links
+a {
+  color: $primary-ui;
+  text-decoration: underline;
+  transition: $base-transition;
+}
+
+// Styling for hover
+a:hover {
+  color: $Purple-95;
+  background-color: $primary-ui;
+}
+
+// Styling for visited link, but will remain same as base link style for now
+a:visited {
+  color: $primary-ui;
+}
+
+// Styling the when the link is clicked
+a:active {
+  color: $Purple-35;
+}
+
+// List items
+li {
+  margin-bottom: 0.25rem;
+}

@@ -1,0 +1,54 @@
+// Font family
+$font-family: "Geologica", sans-serif;
+
+// Purple Colors
+$Purple-99: #f6f5ff;
+$Purple-95: #ece9fb;
+$Purple-90: #e0dcf9;
+$Purple-85: #cbc2f5;
+$Purple-80: #b6a8f0;
+$Purple-70: #a08be5;
+$Purple-60: #8665e2;
+$Purple-55: #7540e7;
+$Purple-50: #5e13d8;
+$Purple-45: #5714c2;
+$Purple-40: #5112b0;
+$Purple-35: #420f94;
+$Purple-30: #380d7c;
+$Purple-25: #2b0a61;
+$Purple-20: #24084f;
+$Purple-15: #1c063d;
+$Purple-10: #14042c;
+
+// Desaturated Colors
+$Desaturated-100: #ffffff;
+$Desaturated-99: #fafafa;
+$Desaturated-95: #f2f1f3;
+$Desaturated-90: #eae9ec;
+$Desaturated-85: #dad9de;
+$Desaturated-80: #cac8d0;
+$Desaturated-70: #b5b3bd;
+$Desaturated-60: #a3a0ac;
+$Desaturated-55: #8e8a99;
+$Desaturated-50: #757181;
+$Desaturated-45: #6c6878;
+$Desaturated-40: #625e6e;
+$Desaturated-35: #585464;
+$Desaturated-30: #45424f;
+$Desaturated-25: #33303b;
+$Desaturated-20: #292730;
+$Desaturated-15: #201d26;
+$Desaturated-10: #17151b;
+
+// Tokens
+$primary-ui: $Purple-50;
+$light-text: $Desaturated-35;
+$dark-text: $Desaturated-15;
+
+// Base transition
+$base-transition: all 440ms ease;
+
+// Defining our breakpoints
+$bp-mobile-max: 767px;
+$bp-tablet-min: 768px;
+$bp-tablet-max: 1023px;

@@ -1,0 +1,152 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+// Base button styles
+@mixin base-button-styles {
+  font-family: $font-family;
+  transition: $base-transition;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 320;
+  height: 3.25rem;
+  gap: 0.125rem;
+  padding: 0rem 1.25rem;
+
+  svg {
+    fill: $Desaturated-100;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &:hover {
+    transform: scale(1.01); // Scale up a bit on hover
+  }
+
+  &:active {
+    transform: scale(1); // Shrink a bit on press
+  }
+}
+
+.btn-cta,
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  @include base-button-styles;
+}
+
+// CTA & Primary button shared styles
+.btn-cta,
+.btn-primary {
+  background-color: $primary-ui;
+  color: $Desaturated-100;
+
+  &:hover {
+    background-color: $Purple-40;
+  }
+
+  &:active {
+    background-color: $Purple-35;
+  }
+}
+
+//CTA Height
+.btn-cta {
+  height: 4rem;
+  padding: 0rem 1.75rem;
+  font-size: 1.125rem;
+
+  svg {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+// Secondary button
+.btn-secondary {
+  background-color: $Purple-99;
+  color: $primary-ui;
+  border: 2px solid $Purple-95;
+  font-weight: 440;
+
+  svg {
+    fill: $primary-ui;
+  }
+
+  &:hover {
+    background-color: $Purple-95;
+    border: 2px solid $Purple-90;
+    color: $Purple-40;
+    svg {
+      fill: $Purple-40;
+    }
+  }
+
+  &:active {
+    background-color: $Purple-90;
+    border: 2px solid $Purple-90;
+    color: $Purple-35;
+    svg {
+      fill: $Purple-35;
+    }
+  }
+}
+
+//Tertiary button
+.btn-tertiary {
+  background-color: transparent;
+  font-weight: 440;
+  color: $primary-ui;
+
+  svg {
+    fill: $primary-ui;
+  }
+
+  &:hover {
+    background-color: $Purple-95;
+    color: $Purple-40;
+
+    svg {
+      fill: $Purple-40;
+    }
+  }
+
+  &:active {
+    background-color: $Purple-90;
+    color: $Purple-35;
+
+    svg {
+      fill: $Purple-35;
+    }
+  }
+}
+
+.btn-cta:hover svg,
+.btn-primary:hover svg,
+.btn-secondary:hover svg,
+.btn-tertiary:hover svg {
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+.btn-primary.icon-right,
+.btn-secondary.icon-right,
+.btn-tertiary.icon-right {
+  padding: 0rem 1rem 0rem 1.25rem;
+}
+
+.btn-primary.icon-left,
+.btn-secondary.icon-left,
+.btn-tertiary.icon-left {
+  padding: 0rem 1.25rem 0rem 1rem;
+}
+
+.btn-cta.icon-right {
+  padding: 0rem 1.5rem 0rem 1.75rem;
+}
+
+.btn-cta.icon-left {
+  padding: 0rem 1.75rem 0rem 1.5rem;
+}

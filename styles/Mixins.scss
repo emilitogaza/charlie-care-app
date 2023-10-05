@@ -1,0 +1,15 @@
+// Responsive font mixin's
+@mixin responsive-font($mobile, $tablet, $desktop) {
+  @media (max-width: $bp-mobile-max) {
+    font-size: $mobile;
+  }
+
+  @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+    font-size: $tablet;
+  }
+
+  @media (min-width: $bp-tablet-max) {
+    font-size: $desktop;
+  }
+}
+
