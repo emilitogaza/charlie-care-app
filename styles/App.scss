@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 .btn-container {
@@ -28,4 +28,12 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+}
+
+.article {
+  background-color: $Purple-99;
+  padding: 3rem 4rem 5rem 4rem;
+  border-radius: 2rem;
+  max-width: 720px;
+  margin-top: 2rem;
 }
